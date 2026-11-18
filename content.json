@@ -1,6 +1,19 @@
 {
   "works": [
     {
+      "id": "umwm56b3zi11i",
+      "img": "img/u-umwm56b3z6vvv.jpg",
+      "w": 1500,
+      "h": 2000,
+      "title_ru": "Сила и нежность",
+      "title_en": "Trance and Tenderness",
+      "medium_ru": "Холст, масло",
+      "medium_en": "Oil on canvas",
+      "size": "",
+      "year": "2026",
+      "status": "available"
+    },
+    {
       "id": "lion",
       "img": "img/w-lion.jpg",
       "w": 1640,
