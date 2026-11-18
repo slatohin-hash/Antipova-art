@@ -1,0 +1,204 @@
+{
+  "works": [
+    {
+      "id": "lion",
+      "img": "img/w-lion.jpg",
+      "w": 1640,
+      "h": 1972,
+      "title_ru": "Королева и лев",
+      "title_en": "The Queen and the Lion",
+      "medium_ru": "Холст, масло",
+      "medium_en": "Oil on canvas",
+      "size": "",
+      "year": "",
+      "status": ""
+    },
+    {
+      "id": "tiger",
+      "img": "img/w-tiger.jpg",
+      "w": 1005,
+      "h": 1425,
+      "title_ru": "Тигр",
+      "title_en": "Tiger",
+      "medium_ru": "Холст, масло",
+      "medium_en": "Oil on canvas",
+      "size": "",
+      "year": "",
+      "status": ""
+    },
+    {
+      "id": "fire",
+      "img": "img/w-fire.jpg",
+      "w": 1100,
+      "h": 1155,
+      "title_ru": "Хранительница огня",
+      "title_en": "Keeper of the Flame",
+      "medium_ru": "Холст, масло",
+      "medium_en": "Oil on canvas",
+      "size": "",
+      "year": "",
+      "status": ""
+    },
+    {
+      "id": "dragon",
+      "img": "img/w-dragon.jpg",
+      "w": 1125,
+      "h": 1435,
+      "title_ru": "Страж города",
+      "title_en": "Guardian of the City",
+      "medium_ru": "Холст, масло",
+      "medium_en": "Oil on canvas",
+      "size": "",
+      "year": "",
+      "status": ""
+    },
+    {
+      "id": "panther",
+      "img": "img/w-panther.jpg",
+      "w": 646,
+      "h": 549,
+      "title_ru": "Пантера",
+      "title_en": "Panther",
+      "medium_ru": "Холст, масло",
+      "medium_en": "Oil on canvas",
+      "size": "",
+      "year": "",
+      "status": ""
+    },
+    {
+      "id": "boxer",
+      "img": "img/w-boxer.jpg",
+      "w": 671,
+      "h": 952,
+      "title_ru": "Боец",
+      "title_en": "Fighter",
+      "medium_ru": "Холст, масло",
+      "medium_en": "Oil on canvas",
+      "size": "",
+      "year": "",
+      "status": ""
+    }
+  ],
+  "workshops": [
+    {
+      "id": "roof-group",
+      "img": "img/e-roof-group.jpg",
+      "w": 960,
+      "h": 1280,
+      "caption_ru": "Мастер-класс на крыше",
+      "caption_en": "Rooftop workshop",
+      "alt_ru": "Участники мастер-класса на крыше со своими картинами",
+      "alt_en": "Workshop participants on a rooftop holding their paintings"
+    },
+    {
+      "id": "teach",
+      "img": "img/e-teach.jpg",
+      "w": 960,
+      "h": 1280,
+      "caption_ru": "Показываю приёмы",
+      "caption_en": "Showing techniques",
+      "alt_ru": "Алёна Антипова показывает приём на холсте участницы",
+      "alt_en": "Alyona Antipova demonstrating a technique on a participant’s canvas"
+    },
+    {
+      "id": "quiz",
+      "img": "img/e-quiz.jpg",
+      "w": 720,
+      "h": 940,
+      "caption_ru": "Творческие встречи",
+      "caption_en": "Creative gatherings",
+      "alt_ru": "Алёна Антипова на творческой встрече",
+      "alt_en": "Alyona Antipova at a creative gathering"
+    },
+    {
+      "id": "shell",
+      "img": "img/e-shell.jpg",
+      "w": 960,
+      "h": 1280,
+      "caption_ru": "Работа участницы",
+      "caption_en": "Participant’s work",
+      "alt_ru": "Картина с ракушкой, написанная на мастер-классе",
+      "alt_en": "A seashell painting made at a workshop"
+    },
+    {
+      "id": "group-hall",
+      "img": "img/e-group-hall.jpg",
+      "w": 1280,
+      "h": 960,
+      "caption_ru": "Работы участников",
+      "caption_en": "Participants’ works",
+      "alt_ru": "Участники мастер-класса с готовыми картинами",
+      "alt_en": "Workshop participants with their finished paintings"
+    },
+    {
+      "id": "cats",
+      "img": "img/e-cats.jpg",
+      "w": 960,
+      "h": 1280,
+      "caption_ru": "Фактура масла",
+      "caption_en": "Oil texture",
+      "alt_ru": "Участница пишет котов под звёздным небом пастозными мазками",
+      "alt_en": "A participant painting cats under a starry sky in thick oil strokes"
+    },
+    {
+      "id": "roof-paint",
+      "img": "img/e-roof-paint.jpg",
+      "w": 960,
+      "h": 1280,
+      "caption_ru": "Процесс",
+      "caption_en": "In progress",
+      "alt_ru": "Участница пишет картину на мастер-классе под открытым небом",
+      "alt_en": "A participant painting at an open-air workshop"
+    },
+    {
+      "id": "candle",
+      "img": "img/e-candle.jpg",
+      "w": 1280,
+      "h": 960,
+      "caption_ru": "Вечерний мастер-класс",
+      "caption_en": "Evening workshop",
+      "alt_ru": "Вечерний мастер-класс при свечах",
+      "alt_en": "An evening workshop by candlelight"
+    },
+    {
+      "id": "event",
+      "img": "img/event.jpg",
+      "w": 920,
+      "h": 613,
+      "caption_ru": "Выставка",
+      "caption_en": "Exhibition",
+      "alt_ru": "Алёна Антипова с гостьями на выставке",
+      "alt_en": "Alyona Antipova with guests at an exhibition"
+    },
+    {
+      "id": "overhead",
+      "img": "img/e-overhead.jpg",
+      "w": 960,
+      "h": 1040,
+      "caption_ru": "Пленэр на крыше",
+      "caption_en": "Open-air session",
+      "alt_ru": "Участницы пишут картины за столиками на крыше",
+      "alt_en": "Participants painting at tables on a rooftop"
+    },
+    {
+      "id": "group-small",
+      "img": "img/e-group-small.jpg",
+      "w": 1280,
+      "h": 960,
+      "caption_ru": "Первые картины",
+      "caption_en": "First paintings",
+      "alt_ru": "Участники мастер-класса держат свои первые картины",
+      "alt_en": "Workshop participants holding their first paintings"
+    },
+    {
+      "id": "roof-duo2",
+      "img": "img/e-roof-duo2.jpg",
+      "w": 960,
+      "h": 1280,
+      "caption_ru": "Единомышленники",
+      "caption_en": "Kindred spirits",
+      "alt_ru": "Алёна Антипова с подругой на крыше над городом",
+      "alt_en": "Alyona Antipova with a friend on a rooftop above the city"
+    }
+  ]
+}
