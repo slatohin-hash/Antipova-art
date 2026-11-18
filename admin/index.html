@@ -233,13 +233,18 @@ async function gh(path, opts={}){
       "Accept":"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28",
       "Authorization":"Bearer "+token, ...(opts.body?{"Content-Type":"application/json"}:{})
     },body:opts.body?JSON.stringify(opts.body):undefined});
-  }catch(e){ const err=new Error("network"); err.status=0; throw err; }
+  }catch(e){
+    let reach=false;
+    try{ const t=await fetch(API+"/zen",{cache:"no-store"}); reach=t.ok||t.status===403||t.status===429; }catch(_){}
+    const err=new Error(String(e&&e.message||e)); err.status=reach?-1:0; throw err;
+  }
   if(!r.ok){ let m=""; try{ m=(await r.json()).message||""; }catch(_){} const err=new Error(m||("HTTP "+r.status)); err.status=r.status; throw err; }
   return r.status===204?null:r.json();
 }
 const repo=p=>`/repos/${OWNER}/${REPO}${p}`;
 function humanError(e, writing){
-  if(e.status===0) return "Нет связи с GitHub. Проверьте интернет и попробуйте ещё раз.";
+  if(e.status===0) return "GitHub не отвечает с этого устройства. Попробуйте через Wi-Fi или в Safari/Chrome (не во встроенном браузере Telegram). Если не поможет, включите VPN.";
+  if(e.status===-1) return "Ключ скопирован с ошибкой: в нём лишние символы. Скопируйте его заново целиком и вставьте ещё раз.";
   if(e.status===401) return "Ключ не подходит или его срок истёк. Создайте новый ключ и войдите снова.";
   if((e.status===403||e.status===404) && writing) return "У ключа нет права на запись. При создании ключа выберите репозиторий Antipova-art и Contents → Read and write.";
   if(e.status===404) return "Ключ не видит репозиторий Antipova-art. При создании ключа выберите именно его.";
@@ -492,8 +497,15 @@ async function enter(){
 }
 $("loginForm").addEventListener("submit",async e=>{
   e.preventDefault();
-  const v=$("token").value.trim();
+  const raw=$("token").value;
+  const v=raw.replace(/[\s\u200B-\u200D\u2060\uFEFF]/g,"").replace(/^["'«»“”]+|["'«»“”]+$/g,"");
   if(!v){ $("loginMsg").textContent="Вставьте ключ доступа."; $("loginMsg").className="msg err"; $("token").focus(); return; }
+  if(!/^(github_pat_|ghp_)[A-Za-z0-9_]+$/.test(v)){
+    $("loginMsg").textContent=/^(github_pat_|ghp_)/.test(v)
+      ? "В ключе есть лишние символы (например, русские буквы или знаки). Скопируйте ключ заново целиком и вставьте ещё раз."
+      : "Это не похоже на ключ GitHub: он должен начинаться с github_pat_. Скопируйте его заново.";
+    $("loginMsg").className="msg err"; return;
+  }
   token=v;
   if(await enter()){ store.set(v,$("remember").checked); $("token").value=""; }
 });
